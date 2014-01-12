@@ -8,3 +8,6 @@ I currently don't provide a compiled script so you will have to install [AutoIt]
 At the first launch, the script will ask wich account you want to follow. If you want to change the account, just edit ExileRaceTracker.ini.
 To close ExileRaceTracker, just open your systray and close the script.
 
+Download
+========
+[Click here](https://github.com/jlauwers/ExileRaceTracker/raw/master/ExileRaceTracker.zip)
