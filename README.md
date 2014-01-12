@@ -14,4 +14,4 @@ Shift-Alt-x : exit the script
 
 Download
 ========
-[Click here](https://github.com/jlauwers/ExileRaceTracker/raw/master/ExileRaceTracker.zip)
+[Click here](https://github.com/jlauwers/ExileRaceTracker/archive/master.zip)
