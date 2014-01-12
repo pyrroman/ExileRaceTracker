@@ -5,15 +5,15 @@
 #include "include/JSON_Translate.au3" ; examples of translator functions, includes JSON_pack and JSON_unpack
 #include "include/JSON_Get.au3"
 
-if FileExists("ExileRaceTracker.ini") = 0 then
-  $account = InputBox("Account","Wich account do you want to follow?")
-  IniWrite("ExileRaceTracker.ini", "Config", "DisplayLocationX", "0")
-  IniWrite("ExileRaceTracker.ini", "Config", "DisplayLocationY", "0")
-  IniWrite("ExileRaceTracker.ini", "Config", "Account", $account)
+if FileExists(@MyDocumentsDir & "/ExileRaceTracker.ini") = 0 then
+  SetAccount()
+  IniWrite(@MyDocumentsDir & "/ExileRaceTracker.ini", "Config", "DisplayLocationX", "0")
+  IniWrite(@MyDocumentsDir & "/ExileRaceTracker.ini", "Config", "DisplayLocationY", "0")
 EndIf
 
 HotKeySet("+!p", "SetPos")
 HotKeySet("+!x", "ExitScript")
+HotKeySet("+!a", "SetAccount")
 
 $dispX = IniRead("ExileRaceTracker.ini", "Config", "DisplayLocationX", "0")
 $dispY = IniRead("ExileRaceTracker.ini", "Config", "DisplayLocationY", "0")
@@ -123,4 +123,9 @@ EndFunc
 
 Func ExitScript()
     Exit
+EndFunc
+
+Func SetAccount()
+    $account = InputBox("Account","Wich account do you want to follow?")
+    IniWrite(@MyDocumentsDir & "/ExileRaceTracker.ini", "Config", "Account", $account)
 EndFunc
