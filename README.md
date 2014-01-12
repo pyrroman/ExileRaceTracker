@@ -9,8 +9,11 @@ At the first launch, the script will ask wich account you want to follow. If you
 
 HotKeys
 =======
-Shift-Alt-p : set the tooltip's position to your cursor position.
-Shift-Alt-x : exit the script
+Shift-Alt-p : Set the tooltip's position to your cursor position.
+
+Shift-Alt-x : Exit the script
+
+Shift-Alt-a : Change the followed account
 
 Download
 ========
