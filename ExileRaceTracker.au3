@@ -12,6 +12,9 @@ if FileExists("ExileRaceTracker.ini") = 0 then
   IniWrite("ExileRaceTracker.ini", "Config", "Account", $account)
 EndIf
 
+HotKeySet("+!p", "SetPos")
+HotKeySet("+!x", "ExitScript")
+
 $dispX = IniRead("ExileRaceTracker.ini", "Config", "DisplayLocationX", "0")
 $dispY = IniRead("ExileRaceTracker.ini", "Config", "DisplayLocationY", "0")
 $Account = IniRead("ExileRaceTracker.ini", "Config", "Account", "")
@@ -23,6 +26,7 @@ $raceID = _JSONGet($races[0],"id")
 $deadString = ""
 $myClass = ""
 $deadCounts = false
+$tooltip = ""
 
 If StringInStr($raceID,"descent",2) Or StringInStr($raceID,"endless ledge",2) Or StringInStr($raceID,"EL",2) Then
     $deadCounts = true
@@ -35,7 +39,6 @@ While 1
     $xpprev = 0
     $cptClass = 1
     $classPos = ""
-    $tooltip = ""
     
     While $found = 0
         $Ladder = _JSONDecode(HttpGet("http://api.pathofexile.com/ladders/" & $raceID,"limit=200&offset=" & $offset))
@@ -108,3 +111,16 @@ While 1
     Next
    
 WEnd
+
+Func SetPos()
+    $MousePos = MouseGetPos()
+    $dispX = $MousePos[0]
+    $dispY = $MousePos[1]
+    ToolTip(@HOUR & ":" & @MIN & ":" & @SEC & " " & $tooltip, $dispX, $dispY)
+    IniWrite("ExileRaceTracker.ini", "Config", "DisplayLocationX", $dispX)
+    IniWrite("ExileRaceTracker.ini", "Config", "DisplayLocationY", $dispY)
+EndFunc
+
+Func ExitScript()
+    Exit
+EndFunc
