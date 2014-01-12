@@ -15,9 +15,10 @@ Shift-Alt-x : Exit the script
 
 Shift-Alt-a : Change the followed account
 
-Screenshot
+Screenshots
 ==========
-[https://imgur.com/yMaOnr3]
+[Screenshot1](http://imgur.com/yMaOnr3)
+
 
 Download
 ========
