@@ -6,7 +6,11 @@ ExileRaceTracker is a simple AutoIt script that will look for your account (or a
 I currently don't provide a compiled script so you will have to install [AutoIt](http://www.autoitscript.com/site/autoit/downloads/).
 
 At the first launch, the script will ask wich account you want to follow. If you want to change the account, just edit ExileRaceTracker.ini.
-To close ExileRaceTracker, just open your systray and close the script.
+
+HotKeys
+=======
+Shift-Alt-p : set the tooltip's position to your cursor position.
+Shift-Alt-x : exit the script
 
 Download
 ========
