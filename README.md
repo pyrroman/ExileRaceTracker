@@ -15,6 +15,10 @@ Shift-Alt-x : Exit the script
 
 Shift-Alt-a : Change the followed account
 
+Screenshot
+==========
+[https://imgur.com/yMaOnr3]
+
 Download
 ========
 [Click here](https://github.com/jlauwers/ExileRaceTracker/archive/master.zip)
