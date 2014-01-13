@@ -22,4 +22,4 @@ Screenshots
 
 Download
 ========
-[Click here](https://github.com/jlauwers/ExileRaceTracker/archive/master.zip)
+[Click here](http://bit.ly/KeCTxC)
