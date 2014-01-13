@@ -7,6 +7,8 @@ I currently don't provide a compiled script so you will have to install [AutoIt]
 
 At the first launch, the script will ask wich account you want to follow. If you want to change the account, just edit ExileRaceTracker.ini.
 
+You will have to set the game to borderless fullscreen.
+
 HotKeys
 =======
 Shift-Alt-p : Set the tooltip's position to your cursor position.
