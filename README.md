@@ -11,11 +11,13 @@ You will have to set the game to borderless fullscreen.
 
 HotKeys
 =======
-Shift-Alt-p : Set the tooltip's position to your cursor position.
+Shift-Alt-P : Set the tooltip's position to your cursor position.
 
-Shift-Alt-x : Exit the script
+Shift-Alt-X : Exit the script
 
-Shift-Alt-a : Change the followed account
+Shift-Alt-A : Change the followed account
+
+Shift-Alt-W : Activate the script for week races. (The script's default is to ignore Week races because of issues when there are two races at the same time) 
 
 Screenshots
 ==========
