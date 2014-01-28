@@ -94,9 +94,9 @@ While 1
                             $rank = $rank-$deads
                         Endif
                         
-                        If $myClass = "" Then
+                        If $myClass <> $class Then
                             $myClass = $class
-                        Else
+                        else
                             $classPos = " " & $myClass & " n°" & $cptClass
                         EndIf
                         
