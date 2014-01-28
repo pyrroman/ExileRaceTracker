@@ -146,7 +146,7 @@ Func SetPos()
     $dispY = $MousePos[1]
     ToolTip(@HOUR & ":" & @MIN & ":" & @SEC & " " & $tooltip, $dispX, $dispY)
     IniWrite($ini, "Config", "DisplayLocationX", $dispX)
-    IniWrite($iniy, "Config", "DisplayLocationY", $dispY)
+    IniWrite($ini, "Config", "DisplayLocationY", $dispY)
 EndFunc
 
 Func ExitScript()
