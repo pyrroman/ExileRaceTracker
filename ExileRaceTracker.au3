@@ -42,13 +42,13 @@ While 1
         $raceID = _JSONGet($races[$i],"id")
         $endAt = _JSONGet($races[$i],"endAt")
     endif
-    
-    While _DateDiff('s', StringTrimRight ( $endAt, 1 ), _NowCalc()) > 0
+   
+    While _DateDiff('s', StringTrimRight ( $endAt, 1 ), $mylocaltime) > 0
         $i=$i+1
         $raceID = _JSONGet($races[$i],"id")
         $endAt = _JSONGet($races[$i],"endAt")
     Wend
-
+    
     $deadString = ""
     $myClass = ""
     $deadCounts = False
